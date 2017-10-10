@@ -1,0 +1,47 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-console": "off",
+        "no-fallthrough": "off",
+        "no-unused-vars": "off",
+        "indent": [
+            "error",
+            2,
+            {
+                "MemberExpression": 2,
+                "CallExpression": {"arguments": "first"},
+                "ArrayExpression": "first",
+                "FunctionExpression": {"parameters": "first"},
+                "FunctionDeclaration": {"parameters": "first"},
+                "SwitchCase": 1,
+                "VariableDeclarator": 2
+
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            { "allowTemplateLiterals": true}
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-regex-spaces": "off"
+    }
+}

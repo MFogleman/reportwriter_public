@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Report Write</title>
+</head>
+<body>
+<div id="root">
+	
+	<div id='messageBox'>&nbsp;</div><br>
+	
+	<form id="userForm">
+		<div id="selectUser">
+			Select User<br>
+			<select name="agentList" id="agentInput">
+				<option value=""></option>
+				<option value="foglemanML">Special Agent M. Fogleman</option>
+				<option value="user01">Blank User 1</option>
+				<option value="user02">Blank User 2</option>
+				<option value="user03">Blank User 3</option>
+				<option value="user04">Blank User 4</option>
+				<!-- <option value="otherAgent">Enter Custom Information</option> -->
+			</select>
+			<button type = "submit">Confirm User</button>
+		</div>
+		<br><br>
+	</form>
+
+
+	<form id='liraForm'>
+		Case Number <input id='caseNumberInput' type='input' placeholder='12-34567'><br><br>
+		Paste LIRA below<br>
+		<textarea rows="10" cols="50" id ="liraInput" type='input'></textarea><br>
+		<button type="submit">Generate Report</button>
+	</form>
+
+	<br><br>
+
+	If you have any problems, call or e-mail Marc.
+
+
+</div>
+	<div id='hidden'></div>
+
+</body>
+<script src="mainscript.js"></script>
+</html>

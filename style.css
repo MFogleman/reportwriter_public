@@ -1,0 +1,344 @@
+body{
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size: 12pt;
+	line-height:1.2;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+.page {
+	border: solid white 1px;
+	width:210mm;
+	height:297mm;
+	padding: 0mm;
+	margin:0 auto;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+	padding: 0;
+}
+
+@media print {
+	html, body{
+		width:210mm;
+		height:297mm;
+		padding: 0mm;
+		margin:0mm;
+	}
+	.page {
+		margin: 0;
+		border:initial;
+		width: initial;
+		height: initial;
+		page-break-after: always;
+	}
+}
+
+.pageNumber{
+	position:absolute;
+	text-align:center;
+	top:94%;
+	font-weight:bold;
+	width:100%;
+	margin-bottom:0px;
+}
+/**********************
+***********************
+**********************/
+
+#coverPage {
+	position: relative;
+	border:solid white 1px;
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+}
+
+#coverLetterHeader{
+	margin:0 auto;
+	margin-top:65mm;
+	text-align:center;
+	line-height:2.1;
+}
+
+#caAddress {
+	margin-top:8mm;
+}
+#coverSubject{
+	margin-top:7mm;
+	margin-left:50%;
+}
+
+#coverBody{
+	line-height:1.2;
+}
+
+#coverSignature{
+	margin-left:50%;
+}
+
+#coverFooter{
+	position:absolute;
+	text-align:justify;
+	bottom:20mm;
+	margin-bottom:0px;
+	width:100%;
+	font-weight:bold;
+	font-size:8pt;
+}
+/*******************
+********************
+*******************/
+
+#titlePage{
+	margin: 0 auto;
+	text-align:center;
+	margin-top:0;
+	padding-top:20mm;
+	height:297mm;
+}
+
+#cov{
+	color: rgb(51, 51, 153);
+	font-size:18pt;
+	font-weight:bold;
+}
+#dosp{
+	color: rgb(51, 51, 153);
+	font-size: 12pt;
+	font-weight:bold;
+}
+
+/*****************
+******************
+*****************/
+#indexPage{
+	position:relative;
+	width:120mm;
+	line-height: 2;
+	margin: 0 auto;
+	height:297mm;
+}
+
+.pageTitle{
+	text-align:center;
+	margin: 0 auto;
+	font-size:14pt;
+	font-weight: bold;
+	margin-bottom:15mm;
+	padding-top:20mm;
+
+}
+
+.leftCol{
+	float:left;
+}
+
+.rightCol{
+	float:right;
+
+}
+.indexLetter{
+	padding-right:15mm;
+}
+
+/**********/
+
+#narrativePage{
+	position: relative;
+	/*210mm width*/
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+	padding-top:20mm;
+}
+
+#narrativePage2{
+	position: relative;
+	/*210mm width*/
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+
+}
+	
+#narrativeHeader{
+	line-height: 1.75;
+	margin-bottom:10mm;
+	font-weight:bold;
+}
+
+.narrativeIndent{
+	font-weight:normal;
+	position:absolute;
+	left:40mm;
+	text-align:left;	
+}
+
+#NOO{
+	font-weight:bold;
+	text-align:center;
+	margin:0 auto;
+}
+#narrativeContent{
+	text-align:justify;
+}
+/*********/
+
+#suspectPage{
+position: relative;
+	/*210mm width*/
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+}
+
+.caseHeader{
+	padding:0mm;
+	margin:0mm;
+	padding-top:10mm;
+}
+
+.caseHeader2{
+	padding:0mm;
+	margin:0mm;
+	padding-top:10mm;
+	margin-bottom:10mm;
+}
+
+#suspectPageTitle{
+	margin:0mm;
+	padding:0mm;
+	text-align:center;
+	margin: 0 auto;
+	font-size:14pt;
+	font-weight: bold;
+	margin-bottom:15mm;
+	padding-top:10mm;
+}
+
+.suspectInfo{
+	line-height:1.5;
+	margin-top:20mm;
+}
+
+
+.suspectName{
+	font-weight: bold;
+	text-decoration: underline
+}
+
+
+.suspectProperty{
+margin-left:10mm;
+}
+
+.suspectValue{
+float:right;
+margin-right:10mm;	
+}
+
+#witnessPage{
+position: relative;
+	/*210mm width*/
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+}
+
+#witnessPageTitle{
+	margin:0mm;
+	padding:0mm;
+	text-align:center;
+	margin: 0 auto;
+	font-size:14pt;
+	font-weight: bold;
+	margin-bottom:15mm;
+	padding-top:10mm;
+}
+
+
+.witnessName{
+	font-weight: bold;
+	text-decoration: underline
+}
+
+.witnessDetails{
+	margin-left:10mm;
+	margin-bottom:5mm;
+}
+
+.witnessStatement{
+	
+	margin-left:-10mm;
+	margin-top:5mm;
+	text-align:justify;
+}
+
+
+#evidencePage{
+position: relative;
+	/*210mm width*/
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+}
+
+#evidencePageTitle{
+	margin:0mm;
+	padding:0mm;
+	text-align:center;
+	margin: 0 auto;
+	font-size:14pt;
+	font-weight: bold;
+	margin-bottom:15mm;
+	padding-top:10mm;
+}
+
+.evidenceList{
+	line-height:1.5;
+	text-align:justify
+}
+
+#formsPage{
+position: relative;
+	/*210mm width*/
+	width:164mm;
+	height:297mm;
+	margin: 0 auto;
+}
+
+#formsPageTitle{
+	margin:0mm;
+	padding:0mm;
+	text-align:center;
+	margin: 0 auto;
+	font-size:14pt;
+	font-weight: bold;
+	margin-bottom:15mm;
+	padding-top:10mm;
+}
+
+.formsList{
+	line-height:1.5;
+	text-align:justify;
+
+}
+
+.formNumber{
+	font-weight:bold;
+	float:right;
+	margin-right:20mm;
+}
+
+#hidden{
+	visibility: hidden
+}
